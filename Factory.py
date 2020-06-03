@@ -217,14 +217,6 @@ class Factory:
             callsArray = pd.merge(callsArray, callsArray2, on='strike')
         callsArray.set_index('strike', inplace=True)
         callsArray = callsArray.fillna(0)
-        ###########################
-        print(callsArray)
-        heat_map = sb.heatmap(callsArray, cmap="Blues", linewidths=0)
-        plt.yticks(rotation=0)
-        plt.xticks(rotation=50)
-        plt.gca().invert_yaxis()
-        plt.show()
-        ############################
         self.threedeegraph(callsArray)
 
 
