@@ -145,7 +145,7 @@ class Factory:
     def threedeegraph(self, object):
         eg = object
         dx, dy = .8, .8
-        fig = plt.figure(figsize=(10, 6))
+        fig = plt.figure(figsize=(10, 10))
         ax = Axes3D(fig)
         xpos = np.arange(eg.shape[0])
         ypos = np.arange(eg.shape[1])
@@ -155,7 +155,7 @@ class Factory:
         xpos = xpos.flatten()
         ypos = ypos.flatten()
         zpos = np.zeros(eg.shape).flatten()
-        dz = eg.values.ravel()
+        dz = eg.values.ravel(order='F')
         values = np.linspace(0.2, 1., xpos.ravel().shape[0])
         colors = cm.rainbow(values)
         ax.bar3d(xpos, ypos, zpos, dx, dy, dz, color=colors)
@@ -217,6 +217,14 @@ class Factory:
             callsArray = pd.merge(callsArray, callsArray2, on='strike')
         callsArray.set_index('strike', inplace=True)
         callsArray = callsArray.fillna(0)
+        ###########################
+        print(callsArray)
+        heat_map = sb.heatmap(callsArray, cmap="Blues", linewidths=0)
+        plt.yticks(rotation=0)
+        plt.xticks(rotation=50)
+        plt.gca().invert_yaxis()
+        plt.show()
+        ############################
         self.threedeegraph(callsArray)
 
 
