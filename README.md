@@ -1,10 +1,7 @@
 # OBJECT BASED OptionsAnalyzer (BETA VERSION)
 * Run autoPIP.sh by typing sh autoPIP.sh in terminal in your IDE to install all required modules
-## How to use the text menu
-*Commands are: setticker, setstrike, optionchain, OIimage, CallsVolumeMap, CallsOIMap, PutsVolumeMap, PutsOIMap, CallVolume3D, CallOI3D, PutVolume3D, PutOI3D, exit*
-* Start with *setticker* and enter a desired stock (ex: AMD)
-* Next, enter *setstrike* to pick a desired date (enables further methods like OIimage and optionchain)
-* After these steps have been completed in order, you're free to load a heatmap or 3D bar graph of the option's open interest or volume for every date and strike, as well as a PNG of open interest / volume on a certain date
+
+## This version automatically prompts you to pick the stock ticker and configures everything for you
 
 ### Open Interest 3D Graph
 ![oi3d](https://user-images.githubusercontent.com/28206070/79798601-dc823600-831e-11ea-90da-963d36b70dbd.png)
