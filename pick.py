@@ -10,7 +10,6 @@ def onButton():
     dlg = wx.TextEntryDialog(frame, 'Enter a Stock Ticker', 'Text Entry')
     dlg.SetValue("AMD")
     if dlg.ShowModal() == wx.ID_OK:
-        # print('Ticker entered was: %s\n' % dlg.GetValue())
         return dlg.GetValue()
     dlg.Destroy()
 

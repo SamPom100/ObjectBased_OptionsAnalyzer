@@ -1,4 +1,6 @@
 import yfinance as yf
+import easygui
+import matplotlib.pyplot as plt
 from pick import pickStrikePrice, onButton, returnChoice
 
 
@@ -17,16 +19,19 @@ class financeObj:
         self.setUpDefaults()
 
     def getTicker(self):
-        print("Ticker is: "+self.ticker)
+        return self.ticker
 
-    def getDates(self):
-        print(self.DateArray)
+    def getDateArray(self):
+        return self.DateArray
 
     def getDateChoice(self):
-        print(self.DateChoice)
+        return self.DateChoice
 
     def getOptionChain(self):
-        print(self.optChain)
+        return self.optChain
+
+    def getYFObject(self):
+        return self.yfObject
 
     def pickStrike(self):
         tempTuple = ("Pick a Strike Price",)
@@ -34,8 +39,13 @@ class financeObj:
         self.DateChoice = returnChoice()
         self.optChain = self.yfObject.option_chain(self.DateChoice)
 
+    def setTicker(self, tick):
+        self.ticker = tick
+        self.setUpDefaults
+
     def pickTicker(self):
-        self.ticker = onButton()
+        #self.ticker = onButton()
+        self.ticker = easygui.enterbox("Pick a Stock Ticker")
         self.setUpDefaults()
 
     def setUpDefaults(self):
