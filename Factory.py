@@ -145,7 +145,7 @@ class Factory:
     def threedeegraph(self, object):
         eg = object
         dx, dy = .8, .8
-        fig = plt.figure(figsize=(10, 10))
+        fig = plt.figure(figsize=(5, 5))
         ax = Axes3D(fig)
         xpos = np.arange(eg.shape[0])
         ypos = np.arange(eg.shape[1])
@@ -161,7 +161,7 @@ class Factory:
         ax.bar3d(xpos, ypos, zpos, dx, dy, dz, color=colors)
         ax.w_yaxis.set_ticklabels(eg.columns)
         ax.w_xaxis.set_ticklabels(eg.index)
-        ax.set_zlabel('Open Interest / Volume')
+        ax.set_zlabel('Number of Contracts')
         plt.show()
         plt.clf()
 

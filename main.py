@@ -6,13 +6,14 @@ import sys
 
 print("******* \n Welcome to Sam's Option Scanner \n *******")
 
-obj = financeObj("ZM")
+obj = financeObj("TSLA")
 
 # bj.pickTicker()
 
 
 factory = Factory(obj)
-factory.PutsVolume3D()
+# factory.CallsOIMap()
+factory.CallsVolume3D()
 
 
 def repeat():

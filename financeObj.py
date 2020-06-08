@@ -52,4 +52,5 @@ class financeObj:
         self.yfObject = yf.Ticker(self.ticker)
         self.DateArray = yf.Ticker(self.ticker).options
         self.DateChoice = self.DateArray[1]
+        # self.addSpaceToArray()
         self.optChain = self.yfObject.option_chain(self.DateChoice)
