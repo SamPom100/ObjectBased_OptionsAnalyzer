@@ -50,3 +50,4 @@ def pickStrikePrice(choices):
 def returnChoice():
     global choice
     return choice
+    
