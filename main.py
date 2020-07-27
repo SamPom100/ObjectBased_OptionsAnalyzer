@@ -6,7 +6,7 @@ import sys
 
 print("******* \n Welcome to Sam's Option Scanner \n *******")
 
-obj = financeObj("SNAP")
+obj = financeObj("TSLA")
 
 # bj.pickTicker()
 
