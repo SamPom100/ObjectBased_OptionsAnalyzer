@@ -6,17 +6,17 @@ import sys
 
 print("******* \n Welcome to Sam's Option Scanner \n *******")
 
-obj = financeObj("TSLA")
+obj = financeObj("INTC")
 
 # bj.pickTicker()
 
 
 factory = Factory(obj)
-# factory.CallsOIMap()
-# factory.CallsVolume3D()
+factory.CallsOIMap()
+factory.CallsVolume3D()
 factory.CallsVolumeMap()
 
-# factory.PutsVolume3D()
+factory.PutsVolume3D()
 factory.PutsVolumeMap()
 
 
