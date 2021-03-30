@@ -46,7 +46,7 @@ pycodestyle==2.5.0
 pycparser==2.20
 pycryptodomex==3.9.4
 PyDispatcher==2.0.5
-Pygments==2.6.1
+Pygments==2.7.4
 PyHamcrest==2.0.2
 PyInquirer==1.0.3
 pylint==2.5.3
