@@ -70,7 +70,7 @@ tqdm==4.40.2
 twistdl==1.1
 Twisted==20.3.0
 update-checker==0.17
-urllib3==1.25.9
+urllib3==1.26.5
 w3lib==1.22.0
 wcwidth==0.2.4
 webcolors==1.11.1
