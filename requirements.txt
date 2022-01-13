@@ -35,7 +35,7 @@ numpy==1.18.4
 pandas==1.0.4
 parsel==1.6.0
 pathlib2==2.3.5
-Pillow==7.1.2
+Pillow==9.0.0
 praw==7.1.0
 prawcore==1.4.0
 prompt-toolkit==1.0.14
