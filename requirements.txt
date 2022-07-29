@@ -58,7 +58,7 @@ queuelib==1.5.0
 regex==2020.6.8
 requests==2.22.0
 scipy==1.4.1
-Scrapy==2.2.1
+Scrapy==2.6.2
 seaborn==0.10.1
 service-identity==18.1.0
 six==1.13.0
